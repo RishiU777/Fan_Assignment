@@ -27,7 +27,7 @@ public class Fan {
 	}
 
 	public void pullSpeedControllerCord() {
-		log.info("Left Cord Pulled");
+		log.info("SpeedController Cord Pulled");
 		this.speedControllerCord.pull();
 		log.info("Current speed {}", getCurrentSpeed());
 		if (getCurrentSpeed() == this.state.getMaximumSpeed()) {
@@ -38,7 +38,7 @@ public class Fan {
 	}
 
 	public void pullDirectionControllerCord() {
-		log.info("Right Cord Pulled");
+		log.info("Direction Cord Pulled");
 		this.directionCord.pull();
 		log.info("Current Direction {}", getCurrentDirection());
 	}
